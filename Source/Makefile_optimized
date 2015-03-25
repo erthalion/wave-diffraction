@@ -1,0 +1,2 @@
+all: main.cpp alg.cpp
+	g++ -o3 -march='athlon' -funsafe-math-optimizations -fforce-addr -fomit-frame-pointer -foptimize-sibling-calls -fno-stack-protector -finline-small-functions -ftree-parallelize-loops=2 -fprefetch-loop-arrays -funsafe-loop-optimizations -floop-parallelize-all -ftree-loop-linear -funroll-loops -ftree-loop-im -fopenmp main.cpp alg.cpp alg_lin.cpp alg_nonlin.cpp comparer.cpp -o Release/Kurs

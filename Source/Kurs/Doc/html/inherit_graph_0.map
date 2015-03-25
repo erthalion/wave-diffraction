@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classAlg.html" title="Base class for calculation &#160;This class contains general functional and abstract realization algorythm..." alt="" coords="7,32,47,61"/>
+<area shape="rect" id="node3" href="$classAlgLin.html" title="Class for calculation linear equation of shallow water." alt="" coords="107,5,165,35"/>
+<area shape="rect" id="node5" href="$classAlgNonlin.html" title="Class for calculation nonlinear equation of shallow water." alt="" coords="97,59,175,88"/>
+</map>

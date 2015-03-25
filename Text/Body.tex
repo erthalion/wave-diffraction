@@ -1,0 +1,187 @@
+\documentclass[a4paper,26pt]{report}
+
+%packages
+%---------------------------------------------------------
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{amssymb,amsfonts,amsmath,amsthm,mathtext,cite,enumerate,float} % mathematics
+\usepackage{graphicx}% for images
+\usepackage{indentfirst}% first paragraph indent
+\usepackage{geometry}% change margins of the page
+\usepackage{titlesec}% title formatting
+\usepackage{tocloft}% toc,lof,lot formatting
+\usepackage{ccaption}% change figure caption
+\usepackage{listings}% for listings
+\usepackage{color}% listings with color hightlight
+%---------------------------------------------------------
+
+%Listing settings
+%---------------------------------------------------------
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{ %
+    basicstyle=\normalsize,           % the size of the fonts that are used for the code
+    backgroundcolor=\color{white},      % choose the background color. You must add \usepackage{color}
+    showspaces=false,               % show spaces adding particular underscores
+    showstringspaces=false,         % underline spaces within strings
+    showtabs=false,                 % show tabs within strings adding particular underscores
+    tabsize=2,                      % sets default tabsize to 2 spaces
+    captionpos=b,                   % sets the caption-position to bottom
+    breaklines=true,                % sets automatic line breaking
+    breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+    title=\lstname,                   % show the filename of files included with \lstinputlisting;
+				  % also try caption instead of title
+    keywordstyle=\color{blue},          % keyword style
+    commentstyle=\color{dkgreen},       % comment style
+    stringstyle=\color{mauve},         % string literal style
+    escapeinside={\%*}{*)},            % if you want to add a comment within your code
+    morekeywords={*,...}               % if you want to add more keywords to the set
+}
+
+\lstloadlanguages{C,[ANSI]C++,bash}% Loaded languages
+\lstset{extendedchars=false,
+    breaklines=true,% Automatic break long line
+breakatwhitespace=true}
+
+%---------------------------------------------------------
+
+%Title format
+%---------------------------------------------------------
+\titleclass{\withoutnumber}{straight}[\chapter]% New chapter class without numering
+\titleclass{\diplomchapter}{straight}[\chapter]% New chapter class for general using
+\titleformat{\withoutnumber}[display]{\Huge \bfseries \filcenter}{}{1em}{}
+\titlespacing{\withoutnumber}{0pt}{*4}{*1.5}
+\titleformat{\diplomchapter}[display]{\Huge \bfseries \filcenter}{}{1em}{Глава \thechapter. }
+\titlespacing{\diplomchapter}{0pt}{0pt}{10pt}
+\titleformat{\chapter}[display]{\Huge \bfseries \filcenter}{}{1em}{}
+\titleformat{\section}[block]{\LARGE \bfseries \filcenter}{}{1em}{\S\;\thesection\; }
+\titleformat{\subsection}[block]{\Large \bfseries \filcenter}{}{1em}{\thesubsection\; }
+\titleformat{\subsubsection}[block]{\Large \bfseries \filcenter}{}{1em}{}
+\titlespacing{\chapter}{0pt}{0pt}{10pt}
+%---------------------------------------------------------
+
+% Starting chapter without a pagebreak
+%---------------------------------------------------------
+\makeatletter
+\renewcommand\chapter{\par%
+    \thispagestyle{plain}%
+    \global\@topnum\z@
+\@afterindentfalse \secdef\@chapter\@schapter} 
+\makeatother
+%---------------------------------------------------------
+
+\newtheorem*{Theorem}{Теорема}% Create theorem environment
+
+% Change bibliography from [] to .
+\makeatletter
+\renewcommand{\@biblabel}[1]{#1.}
+\makeatother
+
+% Change ‘:’ for images after figure number
+\captiondelim{ }
+
+\setcounter{tocdepth}{2}
+
+\numberwithin{equation}{chapter}
+
+\graphicspath{{images/}}% Images path
+
+% Change margins of the page
+%---------------------------------------------------------
+\geometry{left=3cm}% left margin
+\geometry{right=1cm}% right margin
+\geometry{top=1.5cm}% top margin
+\geometry{bottom=2cm}% bottom margin
+%---------------------------------------------------------
+
+\renewcommand{\baselinestretch}{1.5}
+
+% Change enumeration format to Num.Num
+%---------------------------------------------------------
+\renewcommand{\theenumi}{\arabic{enumi}}
+\renewcommand{\labelenumi}{\arabic{enumi}}
+\renewcommand{\theenumii}{.\arabic{enumii}}
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}.}
+\renewcommand{\theenumiii}{.\arabic{enumiii}}
+\renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.}
+%---------------------------------------------------------
+
+\bibliographystyle{unsrt}
+
+\begin{document}
+
+% Set toc/lof indents
+%---------------------------------------------------------
+\cftsetindents{figure}{0em}{3em}
+\cftsetindents{table}{0em}{3em}
+\cftsetindents{chapter}{0em}{7em}
+\cftsetindents{section}{1.5em}{4em}
+\cftsetindents{subsection}{4em}{4em}
+%---------------------------------------------------------
+
+\input{Title}% Title page
+
+\fontsize{14}{15pt}\selectfont
+\tableofcontents
+
+\newpage
+\withoutnumber*{Введение}
+\addcontentsline{toc}{chapter}{Введение}
+\input{Introduction}
+
+\newpage
+\numberwithin{equation}{section}
+\addtocounter{chapter}{1}
+\setcounter{section}{0}
+\setcounter{figure}{0}
+\setcounter{table}{0}
+\setcounter{equation}{0}
+\diplomchapter*{Метод решения}
+\addtocontents{toc}{\contentsline{chapter}{\protect\numberline{Глава \thechapter.}\vspace{10pt}Метод решения}{\thepage}}
+\input{Method}
+
+\newpage
+\numberwithin{equation}{chapter}
+\addtocounter{chapter}{1}
+\setcounter{section}{0}
+\setcounter{figure}{0}
+\setcounter{table}{0}
+\setcounter{equation}{0}
+\diplomchapter*{Результаты расчетов}
+\addtocontents{toc}{\contentsline{chapter}{\protect\numberline{Глава \thechapter.}\vspace{10pt}Результаты расчетов}{\thepage}}
+\input{Result}
+
+\newpage
+\addtocounter{chapter}{1}
+\setcounter{section}{0}
+\setcounter{figure}{0}
+\setcounter{table}{0}
+\setcounter{equation}{0}
+\diplomchapter*{Приложения}
+\addtocontents{toc}{\contentsline{chapter}{\protect\numberline{Глава \thechapter.}\vspace{10pt}Приложения}{\thepage}}
+
+\setcounter{figure}{0}
+\setcounter{table}{0}
+\setcounter{equation}{0}
+\setcounter{subsection}{0}
+\addtocounter{section}{1}
+\section*{Программные средства}
+\addtocontents{toc}{\contentsline{section}{\protect\numberline{\S\;\thesection.}\vspace{10pt}Программные средства}{\thepage}}
+\input{Program}
+
+\newpage
+\listoffigures
+\addtocounter{section}{1}
+\addtocontents{toc}{\contentsline{section}{\protect\numberline{\S\;\thesection}\vspace{10pt}Список иллюстраций}{\thepage}}
+
+\newpage
+\listoftables
+\addtocounter{section}{1}
+\addtocontents{toc}{\contentsline{section}{\protect\numberline{\S\;\thesection}\vspace{10pt}Список таблиц}{\thepage}}
+
+\newpage
+\bibliography{lib}
+\addcontentsline{toc}{chapter}{Литература}
+\end{document}

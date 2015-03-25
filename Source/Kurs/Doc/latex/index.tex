@@ -1,0 +1,72 @@
+\begin{DoxyAuthor}{Author}
+Erthalion \href{mailto:9erthalion6@gmail.com}{\tt 9erthalion6@gmail.com}
+\end{DoxyAuthor}
+There is three general object -\/ solver for linear equations,solver for nonlinear equations and comparer (for comparison linear and nonlinear equations). Now to change calculation parameters, is necessary to change them in main.cpp code, or create before start: 
+\begin{DoxyCode}
+ if(argc != 10)
+   {
+       printf("insert 10 param\n");
+       return -1;
+   }
+ AlgLin *A=new AlgLin(atof(argv[1]),atof(argv[2]),atoi(argv[3]),atoi(argv[4]),ato
+      f(argv[5]),argv[6],atoi(argv[7]),atof(argv[8]));
+ A->solve(atoi(argv[9]));
+\end{DoxyCode}
+
+
+There is example of start nonlinear solver: 
+\begin{DoxyCode}
+ AlgNonlin *A=new AlgNonlin(1,1,30,30,0.0000001,(char*)"out_nonlin.dat",100,0.01)
+      ;
+ A->solve(3);
+\end{DoxyCode}
+
+
+There is example of start comparer: 
+\begin{DoxyCode}
+ Comparer *cmp=new Comparer(50,50,1.0/(50-1),1.0/(50-1),80);
+ cmp->delta((char*)"out_nonlin.dat",(char*)"out_lin.dat",(char*)"delta.dat");
+\end{DoxyCode}
+
+
+Main calculation process accompanied by printing thread, which displays all debugging information.
+
+\begin{DoxyWarning}{Warning}
+this is unix thread,not crossplatform; to use on windows,should be removed all lines of code with pthread
+\end{DoxyWarning}
+We use two ways to build the project: 
+\begin{DoxyItemize}
+\item Compile with CMake. See Build/CMakeList.txt 
+\item Compile with own script for Profile-\/guided optimization (until do not understand, how to implement is in CMake). See Build/make.sh. This script has one parameter to choise mode of compilation -\/ 1 to collect profile statistic, 2 to compile with using exist statistic (general mode). 
+\end{DoxyItemize}Usage second way: 
+\begin{DoxyCode}
+ ./make.sh 1
+ then
+ ./make.sh 2
+\end{DoxyCode}
+
+
+\begin{DoxyWarning}{Warning}
+compile whith make.sh in first mode only short-\/time calculation because it slowly!
+\end{DoxyWarning}
+Optimization flags of gcc are used in the CMakeList.txt and make.sh: 
+\begin{DoxyCode}
+ -o3 -march=native -funsafe-math-optimizations -fomit-frame-pointer -fno-stack-pr
+      otector -finline-small-functions -fprefetch-loop-arrays -funsafe-loop-optimizatio
+      ns -funroll-loops -std=c++0x -mpreferred-stack-boundary=6 -ftracer
+\end{DoxyCode}
+
+
+In the CMakeList.txt defined two compilation type -\/ Release and Debug. To choise:
+
+
+\begin{DoxyCode}
+  cmake -DCMAKE_BUILD_TYPE=Release ./
+  make
+\end{DoxyCode}
+
+
+\begin{DoxyNote}{Note}
+The code has OpenMP pragmas -\/ parallelization of program has not yer completed. It is not effective with this pragmas (not compile with -\/fopenmp)
+\end{DoxyNote}
+Actual version of program is available in the repository \href{http://code.google.com/p/erthalion-nm/}{\tt http://code.google.com/p/erthalion-\/nm/} 

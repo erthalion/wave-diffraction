@@ -1,0 +1,204 @@
+\hypertarget{classAlgNonlin}{
+\section{AlgNonlin Class Reference}
+\label{classAlgNonlin}\index{AlgNonlin@{AlgNonlin}}
+}
+
+
+Class for calculation nonlinear equation of shallow water.  
+
+
+
+
+{\ttfamily \#include $<$alg\_\-nonlin.h$>$}
+
+
+
+Inheritance diagram for AlgNonlin:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{classAlgNonlin__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for AlgNonlin:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{classAlgNonlin__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAlgNonlin_a3a4b7b0afb7e2ef2cc3f09b6d35fec42}{AlgNonlin} (double in\_\-height, double in\_\-lenght, int in\_\-nx, int in\_\-ny, double in\_\-eps, char $\ast$in\_\-out\_\-name, int in\_\-count, double in\_\-t)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classAlgNonlin_a575576e90c96d93b28debdf30f51e741}{
+void \hyperlink{classAlgNonlin_a575576e90c96d93b28debdf30f51e741}{resolve\_\-r} ()}
+\label{classAlgNonlin_a575576e90c96d93b28debdf30f51e741}
+
+\begin{DoxyCompactList}\small\item\em Function for recalculation of reciduals for all equations. \end{DoxyCompactList}\item 
+void \hyperlink{classAlgNonlin_a28bbb13e708a32cf4f191db56325e52c}{resolve\_\-r} (int mode)
+\item 
+double \hyperlink{classAlgNonlin_ae7c521438daed488cd69b131292f2a8a}{find} (double $\ast$$\ast$a, double $\ast$$\ast$b, double $\ast$$\ast$c)
+\begin{DoxyCompactList}\small\item\em Function to find method coefficient. \end{DoxyCompactList}\item 
+double \hyperlink{classAlgNonlin_a164094279ad86962c650221b112c9223}{find} (int mode, double $\ast$$\ast$a, double $\ast$$\ast$b, double $\ast$$\ast$c)
+\begin{DoxyCompactList}\small\item\em Function to find method coefficient for one equation. \end{DoxyCompactList}\item 
+double $\ast$ \hyperlink{classAlgNonlin_a3f3bdece3eb2ccaffeb7c19bd318121e}{find\_\-all} (double $\ast$$\ast$a, double $\ast$$\ast$b, double $\ast$$\ast$c)
+\item 
+\hypertarget{classAlgNonlin_a885ddfe1f2181d777f98503d66480e1c}{
+void \hyperlink{classAlgNonlin_a885ddfe1f2181d777f98503d66480e1c}{check\_\-result} ()}
+\label{classAlgNonlin_a885ddfe1f2181d777f98503d66480e1c}
+
+\begin{DoxyCompactList}\small\item\em Function for independent verification of reciduals. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for calculation nonlinear equation of shallow water. 
+
+This class contains specific for nonlinear equations functionali 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classAlgNonlin_a3a4b7b0afb7e2ef2cc3f09b6d35fec42}{
+\index{AlgNonlin@{AlgNonlin}!AlgNonlin@{AlgNonlin}}
+\index{AlgNonlin@{AlgNonlin}!AlgNonlin@{AlgNonlin}}
+\subsubsection[{AlgNonlin}]{\setlength{\rightskip}{0pt plus 5cm}AlgNonlin::AlgNonlin (
+\begin{DoxyParamCaption}
+\item[{double}]{in\_\-height, }
+\item[{double}]{in\_\-lenght, }
+\item[{int}]{in\_\-nx, }
+\item[{int}]{in\_\-ny, }
+\item[{double}]{in\_\-eps, }
+\item[{char $\ast$}]{in\_\-out\_\-name, }
+\item[{int}]{in\_\-count, }
+\item[{double}]{in\_\-t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classAlgNonlin_a3a4b7b0afb7e2ef2cc3f09b6d35fec42}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\_\-height} & Height calculation area \\
+\hline
+{\em in\_\-lenght} & Lenght calculation area \\
+\hline
+{\em in\_\-nx} & Count of Ox node \\
+\hline
+{\em in\_\-ny} & Count of Oy node \\
+\hline
+{\em in\_\-eps} & The accuracy of calculations \\
+\hline
+{\em in\_\-out\_\-name} & Output filename for save result \\
+\hline
+{\em count} & Count iteration by time \\
+\hline
+{\em in\_\-t} & Step by time \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classAlgNonlin_a164094279ad86962c650221b112c9223}{
+\index{AlgNonlin@{AlgNonlin}!find@{find}}
+\index{find@{find}!AlgNonlin@{AlgNonlin}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}double AlgNonlin::find (
+\begin{DoxyParamCaption}
+\item[{int}]{mode, }
+\item[{double $\ast$$\ast$}]{a, }
+\item[{double $\ast$$\ast$}]{b, }
+\item[{double $\ast$$\ast$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classAlgNonlin_a164094279ad86962c650221b112c9223}
+
+
+Function to find method coefficient for one equation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & number of equation \\
+\hline
+{\em a} & array of data for first equation \\
+\hline
+{\em b} & array of data for second equation \\
+\hline
+{\em c} & array of data for third equation \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classAlg_a979d6df06027c6353b682662d8c514fc}{Alg}.
+
+\hypertarget{classAlgNonlin_ae7c521438daed488cd69b131292f2a8a}{
+\index{AlgNonlin@{AlgNonlin}!find@{find}}
+\index{find@{find}!AlgNonlin@{AlgNonlin}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}double AlgNonlin::find (
+\begin{DoxyParamCaption}
+\item[{double $\ast$$\ast$}]{a, }
+\item[{double $\ast$$\ast$}]{b, }
+\item[{double $\ast$$\ast$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classAlgNonlin_ae7c521438daed488cd69b131292f2a8a}
+
+
+Function to find method coefficient. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & array of data for first equation \\
+\hline
+{\em b} & array of data for second equation \\
+\hline
+{\em c} & array of data for third equation \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classAlg_ada4ff3d2a0adb3b177d824e337158bfd}{Alg}.
+
+\hypertarget{classAlgNonlin_a3f3bdece3eb2ccaffeb7c19bd318121e}{
+\index{AlgNonlin@{AlgNonlin}!find\_\-all@{find\_\-all}}
+\index{find\_\-all@{find\_\-all}!AlgNonlin@{AlgNonlin}}
+\subsubsection[{find\_\-all}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$ AlgNonlin::find\_\-all (
+\begin{DoxyParamCaption}
+\item[{double $\ast$$\ast$}]{a, }
+\item[{double $\ast$$\ast$}]{b, }
+\item[{double $\ast$$\ast$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classAlgNonlin_a3f3bdece3eb2ccaffeb7c19bd318121e}
+not used 
+
+Implements \hyperlink{classAlg_aef9cdfe539aed53c23222715c551e11e}{Alg}.
+
+\hypertarget{classAlgNonlin_a28bbb13e708a32cf4f191db56325e52c}{
+\index{AlgNonlin@{AlgNonlin}!resolve\_\-r@{resolve\_\-r}}
+\index{resolve\_\-r@{resolve\_\-r}!AlgNonlin@{AlgNonlin}}
+\subsubsection[{resolve\_\-r}]{\setlength{\rightskip}{0pt plus 5cm}void AlgNonlin::resolve\_\-r (
+\begin{DoxyParamCaption}
+\item[{int}]{mode}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classAlgNonlin_a28bbb13e708a32cf4f191db56325e52c}
+Function for recalculation of reciduals for one equation 
+\begin{DoxyParams}{Parameters}
+{\em mode} & number of equation for recalculation \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classAlg_aa2436420b85976a48465408e9d86d425}{Alg}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/media/Documents/Documents/University/science/Numeric/Kurs/Kurs\_\-Linux/Kurs/src/alg\_\-nonlin.h\item 
+/media/Documents/Documents/University/science/Numeric/Kurs/Kurs\_\-Linux/Kurs/src/alg\_\-nonlin.cpp\end{DoxyCompactItemize}

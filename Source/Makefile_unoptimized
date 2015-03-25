@@ -1,0 +1,2 @@
+all: main.cpp alg.cpp
+	g++ -o3 -march='athlon' -fno-stack-protector -finline-small-functions -fopenmp main.cpp alg.cpp alg_lin.cpp alg_nonlin.cpp comparer.cpp -o Release/Kurs

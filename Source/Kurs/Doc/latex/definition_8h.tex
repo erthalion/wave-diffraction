@@ -1,0 +1,239 @@
+\hypertarget{definition_8h}{
+\section{/media/Documents/Documents/University/science/Numeric/Kurs/Kurs\_\-Linux/Kurs/src/definition.h File Reference}
+\label{definition_8h}\index{/media/Documents/Documents/University/science/Numeric/Kurs/Kurs\_\-Linux/Kurs/src/definition.h@{/media/Documents/Documents/University/science/Numeric/Kurs/Kurs\_\-Linux/Kurs/src/definition.h}}
+}
+This graph shows which files directly or indirectly include this file:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{definition_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{definition_8h_a60a5ae0f649d015e57358b74379701c5}{centering\_\-wave}(height, grad, i, j)~height$\ast$exp(-\/grad$\ast$(((double)i/nx-\/0.5)$\ast$((double)i/nx-\/0.5)))
+\begin{DoxyCompactList}\small\item\em Long Ox centering wave. \end{DoxyCompactList}\item 
+\#define \hyperlink{definition_8h_a8394da0c2596dfaf6df870fe488596da}{wave}(height, grad, i, j, shift)~height$\ast$exp(-\/grad$\ast$(((double)i/nx-\/shift)$\ast$((double)i/nx-\/shift)))
+\begin{DoxyCompactList}\small\item\em Long Ox wave. \end{DoxyCompactList}\item 
+\#define \hyperlink{definition_8h_a5e750d7a713925405ab12b788fcde3b0}{centering\_\-drop}(height, grad, i, j)~height$\ast$exp(-\/grad$\ast$(((double)i/nx-\/0.5)$\ast$((double)i/nx-\/0.5)+((double)j/ny-\/0.5)$\ast$((double)j/ny-\/0.5)))
+\begin{DoxyCompactList}\small\item\em Small centering drop. \end{DoxyCompactList}\item 
+\#define \hyperlink{definition_8h_aeb863677d329117f4b386ddfade29024}{drop}(height, grad, i, j, shiftX, shiftY)~height$\ast$exp(-\/grad$\ast$(((double)i/nx-\/shiftX)$\ast$((double)i/nx-\/shiftX)+((double)j/ny-\/shiftY)$\ast$((double)j/ny-\/shiftY)))
+\begin{DoxyCompactList}\small\item\em Small drop. \end{DoxyCompactList}\item 
+\#define \hyperlink{definition_8h_a54316f8a22a09747db6f077fadae87cf}{stair}(i, j)~if(i$<$nx/10)\{return 0;\}
+\begin{DoxyCompactList}\small\item\em Bottom function. \end{DoxyCompactList}\item 
+\#define \hyperlink{definition_8h_ab0d868f50ee592f363693151df01be37}{stair\_\-shift}(i, j, shift)~if(i$<$nx/shift)\{return 0;\}
+\begin{DoxyCompactList}\small\item\em Bottom function. \end{DoxyCompactList}\item 
+\#define \hyperlink{definition_8h_ab09fd0612528376375b99647764df0cf}{rise}(i, j)~if(i$<$nx/3\&\&i$>$nx/5)\{return 0.01-\/(nx/3-\/i)$\ast$0.001;\}; if(i$<$=nx/5)\{return 0.01-\/(nx/3-\/nx/5)$\ast$0.001;\}
+\begin{DoxyCompactList}\small\item\em Bottom function. \end{DoxyCompactList}\item 
+\#define \hyperlink{definition_8h_a29a35654ab5aa98a523c1147e69cb9d1}{cylinder}(i, j)~if(sqrt((i$\ast$hx-\/0.5)$\ast$(i$\ast$hx-\/0.5)+(j$\ast$hy-\/0.5)$\ast$(j$\ast$hy-\/0.5))$<$0.05)\{return 0.2;\}
+\begin{DoxyCompactList}\small\item\em Bottom function. \end{DoxyCompactList}\item 
+\hypertarget{definition_8h_a3d8c9c145887af5174ba4cc6789862ad}{
+\#define \hyperlink{definition_8h_a3d8c9c145887af5174ba4cc6789862ad}{TAU}~0}
+\label{definition_8h_a3d8c9c145887af5174ba4cc6789862ad}
+
+\begin{DoxyCompactList}\small\item\em Constants for TAU mode in solve process. \end{DoxyCompactList}\item 
+\hypertarget{definition_8h_ad22c94c78a741ad767300c9b586ac4f8}{
+\#define \hyperlink{definition_8h_ad22c94c78a741ad767300c9b586ac4f8}{ALFA}~1}
+\label{definition_8h_ad22c94c78a741ad767300c9b586ac4f8}
+
+\begin{DoxyCompactList}\small\item\em Constants for ALFA mode in solve process. \end{DoxyCompactList}\item 
+\hypertarget{definition_8h_a167d2c0ec9b943d55f2124f7442b2f6d}{
+\#define \hyperlink{definition_8h_a167d2c0ec9b943d55f2124f7442b2f6d}{g}~9.8}
+\label{definition_8h_a167d2c0ec9b943d55f2124f7442b2f6d}
+
+\begin{DoxyCompactList}\small\item\em Constants for g. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains the definitions of macro, which describe forms of free surface of fluid, form of bottom and some constants. 
+
+\subsection{Define Documentation}
+\hypertarget{definition_8h_a5e750d7a713925405ab12b788fcde3b0}{
+\index{definition.h@{definition.h}!centering\_\-drop@{centering\_\-drop}}
+\index{centering\_\-drop@{centering\_\-drop}!definition.h@{definition.h}}
+\subsubsection[{centering\_\-drop}]{\setlength{\rightskip}{0pt plus 5cm}\#define centering\_\-drop(
+\begin{DoxyParamCaption}
+\item[{}]{height, }
+\item[{}]{grad, }
+\item[{}]{i, }
+\item[{}]{j}
+\end{DoxyParamCaption}
+)~height$\ast$exp(-\/grad$\ast$(((double)i/nx-\/0.5)$\ast$((double)i/nx-\/0.5)+((double)j/ny-\/0.5)$\ast$((double)j/ny-\/0.5)))}}
+\label{definition_8h_a5e750d7a713925405ab12b788fcde3b0}
+
+
+Small centering drop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & height of drop \\
+\hline
+{\em grad} & degree of steepness of the ascent \\
+\hline
+\end{DoxyParams}
+\hypertarget{definition_8h_a60a5ae0f649d015e57358b74379701c5}{
+\index{definition.h@{definition.h}!centering\_\-wave@{centering\_\-wave}}
+\index{centering\_\-wave@{centering\_\-wave}!definition.h@{definition.h}}
+\subsubsection[{centering\_\-wave}]{\setlength{\rightskip}{0pt plus 5cm}\#define centering\_\-wave(
+\begin{DoxyParamCaption}
+\item[{}]{height, }
+\item[{}]{grad, }
+\item[{}]{i, }
+\item[{}]{j}
+\end{DoxyParamCaption}
+)~height$\ast$exp(-\/grad$\ast$(((double)i/nx-\/0.5)$\ast$((double)i/nx-\/0.5)))}}
+\label{definition_8h_a60a5ae0f649d015e57358b74379701c5}
+
+
+Long Ox centering wave. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & height of wave \\
+\hline
+{\em grad} & degree of steepness of the ascent \\
+\hline
+\end{DoxyParams}
+\hypertarget{definition_8h_a29a35654ab5aa98a523c1147e69cb9d1}{
+\index{definition.h@{definition.h}!cylinder@{cylinder}}
+\index{cylinder@{cylinder}!definition.h@{definition.h}}
+\subsubsection[{cylinder}]{\setlength{\rightskip}{0pt plus 5cm}\#define cylinder(
+\begin{DoxyParamCaption}
+\item[{}]{i, }
+\item[{}]{j}
+\end{DoxyParamCaption}
+)~if(sqrt((i$\ast$hx-\/0.5)$\ast$(i$\ast$hx-\/0.5)+(j$\ast$hy-\/0.5)$\ast$(j$\ast$hy-\/0.5))$<$0.05)\{return 0.2;\}}}
+\label{definition_8h_a29a35654ab5aa98a523c1147e69cb9d1}
+
+
+Bottom function. 
+
+
+\begin{DoxyCode}
+ cylinder
+       --
+       ||
+ ------  -------
+\end{DoxyCode}
+ \hypertarget{definition_8h_aeb863677d329117f4b386ddfade29024}{
+\index{definition.h@{definition.h}!drop@{drop}}
+\index{drop@{drop}!definition.h@{definition.h}}
+\subsubsection[{drop}]{\setlength{\rightskip}{0pt plus 5cm}\#define drop(
+\begin{DoxyParamCaption}
+\item[{}]{height, }
+\item[{}]{grad, }
+\item[{}]{i, }
+\item[{}]{j, }
+\item[{}]{shiftX, }
+\item[{}]{shiftY}
+\end{DoxyParamCaption}
+)~height$\ast$exp(-\/grad$\ast$(((double)i/nx-\/shiftX)$\ast$((double)i/nx-\/shiftX)+((double)j/ny-\/shiftY)$\ast$((double)j/ny-\/shiftY)))}}
+\label{definition_8h_aeb863677d329117f4b386ddfade29024}
+
+
+Small drop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & height of drop \\
+\hline
+{\em grad} & degree of steepness of the ascent \\
+\hline
+{\em shiftX} & offset from the origin of Ox \\
+\hline
+{\em shiftY} & offset from the origin of Oy \\
+\hline
+\end{DoxyParams}
+\hypertarget{definition_8h_ab09fd0612528376375b99647764df0cf}{
+\index{definition.h@{definition.h}!rise@{rise}}
+\index{rise@{rise}!definition.h@{definition.h}}
+\subsubsection[{rise}]{\setlength{\rightskip}{0pt plus 5cm}\#define rise(
+\begin{DoxyParamCaption}
+\item[{}]{i, }
+\item[{}]{j}
+\end{DoxyParamCaption}
+)~if(i$<$nx/3\&\&i$>$nx/5)\{return 0.01-\/(nx/3-\/i)$\ast$0.001;\}; if(i$<$=nx/5)\{return 0.01-\/(nx/3-\/nx/5)$\ast$0.001;\}}}
+\label{definition_8h_ab09fd0612528376375b99647764df0cf}
+
+
+Bottom function. 
+
+
+\begin{DoxyCode}
+ rise
+ ----
+     -
+      -
+       --------
+\end{DoxyCode}
+ \hypertarget{definition_8h_a54316f8a22a09747db6f077fadae87cf}{
+\index{definition.h@{definition.h}!stair@{stair}}
+\index{stair@{stair}!definition.h@{definition.h}}
+\subsubsection[{stair}]{\setlength{\rightskip}{0pt plus 5cm}\#define stair(
+\begin{DoxyParamCaption}
+\item[{}]{i, }
+\item[{}]{j}
+\end{DoxyParamCaption}
+)~if(i$<$nx/10)\{return 0;\}}}
+\label{definition_8h_a54316f8a22a09747db6f077fadae87cf}
+
+
+Bottom function. 
+
+
+\begin{DoxyCode}
+ stair
+ -----
+     |
+     |---------
+\end{DoxyCode}
+ \hypertarget{definition_8h_ab0d868f50ee592f363693151df01be37}{
+\index{definition.h@{definition.h}!stair\_\-shift@{stair\_\-shift}}
+\index{stair\_\-shift@{stair\_\-shift}!definition.h@{definition.h}}
+\subsubsection[{stair\_\-shift}]{\setlength{\rightskip}{0pt plus 5cm}\#define stair\_\-shift(
+\begin{DoxyParamCaption}
+\item[{}]{i, }
+\item[{}]{j, }
+\item[{}]{shift}
+\end{DoxyParamCaption}
+)~if(i$<$nx/shift)\{return 0;\}}}
+\label{definition_8h_ab0d868f50ee592f363693151df01be37}
+
+
+Bottom function. 
+
+
+\begin{DoxyCode}
+ stair
+ -----
+     |
+     |---------
+\end{DoxyCode}
+ \hypertarget{definition_8h_a8394da0c2596dfaf6df870fe488596da}{
+\index{definition.h@{definition.h}!wave@{wave}}
+\index{wave@{wave}!definition.h@{definition.h}}
+\subsubsection[{wave}]{\setlength{\rightskip}{0pt plus 5cm}\#define wave(
+\begin{DoxyParamCaption}
+\item[{}]{height, }
+\item[{}]{grad, }
+\item[{}]{i, }
+\item[{}]{j, }
+\item[{}]{shift}
+\end{DoxyParamCaption}
+)~height$\ast$exp(-\/grad$\ast$(((double)i/nx-\/shift)$\ast$((double)i/nx-\/shift)))}}
+\label{definition_8h_a8394da0c2596dfaf6df870fe488596da}
+
+
+Long Ox wave. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & height of wave \\
+\hline
+{\em grad} & degree of steepness of the ascent \\
+\hline
+{\em shift} & offset from the origin of coordinates \\
+\hline
+\end{DoxyParams}

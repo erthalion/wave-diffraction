@@ -1,0 +1,204 @@
+\hypertarget{classAlgLin}{
+\section{AlgLin Class Reference}
+\label{classAlgLin}\index{AlgLin@{AlgLin}}
+}
+
+
+Class for calculation linear equation of shallow water.  
+
+
+
+
+{\ttfamily \#include $<$alg\_\-lin.h$>$}
+
+
+
+Inheritance diagram for AlgLin:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=124pt]{classAlgLin__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for AlgLin:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=124pt]{classAlgLin__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAlgLin_aff1317578ef31f6f1fd621015d6e6c5f}{AlgLin} (double in\_\-height, double in\_\-lenght, int in\_\-nx, int in\_\-ny, double in\_\-eps, char $\ast$in\_\-out\_\-name, int in\_\-count, double in\_\-t)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classAlgLin_aed4bd552c5ef7d2b43e94c04286df633}{
+void \hyperlink{classAlgLin_aed4bd552c5ef7d2b43e94c04286df633}{resolve\_\-r} ()}
+\label{classAlgLin_aed4bd552c5ef7d2b43e94c04286df633}
+
+\begin{DoxyCompactList}\small\item\em Function for recalculation of reciduals for all equations. \end{DoxyCompactList}\item 
+void \hyperlink{classAlgLin_a7784f0707d7a081da5f85615f374df32}{resolve\_\-r} (int mode)
+\item 
+double \hyperlink{classAlgLin_a8323f1f45960e8d39184a61730fffffb}{find} (double $\ast$$\ast$a, double $\ast$$\ast$b, double $\ast$$\ast$c)
+\begin{DoxyCompactList}\small\item\em Function to find method coefficient. \end{DoxyCompactList}\item 
+double \hyperlink{classAlgLin_a0e6a96c3b072cb277bd7b1d4dd945472}{find} (int mode, double $\ast$$\ast$a, double $\ast$$\ast$b, double $\ast$$\ast$c)
+\begin{DoxyCompactList}\small\item\em Function to find method coefficient for one equation. \end{DoxyCompactList}\item 
+double $\ast$ \hyperlink{classAlgLin_ac5e5cd276c5be663d2d36ab92bf6ad83}{find\_\-all} (double $\ast$$\ast$a, double $\ast$$\ast$b, double $\ast$$\ast$c)
+\item 
+\hypertarget{classAlgLin_ad4c4596c11ad45040df273e022a508d7}{
+void \hyperlink{classAlgLin_ad4c4596c11ad45040df273e022a508d7}{check\_\-result} ()}
+\label{classAlgLin_ad4c4596c11ad45040df273e022a508d7}
+
+\begin{DoxyCompactList}\small\item\em Function for independent verification of reciduals. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for calculation linear equation of shallow water. 
+
+This class contains specific for linear equations functionali 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classAlgLin_aff1317578ef31f6f1fd621015d6e6c5f}{
+\index{AlgLin@{AlgLin}!AlgLin@{AlgLin}}
+\index{AlgLin@{AlgLin}!AlgLin@{AlgLin}}
+\subsubsection[{AlgLin}]{\setlength{\rightskip}{0pt plus 5cm}AlgLin::AlgLin (
+\begin{DoxyParamCaption}
+\item[{double}]{in\_\-height, }
+\item[{double}]{in\_\-lenght, }
+\item[{int}]{in\_\-nx, }
+\item[{int}]{in\_\-ny, }
+\item[{double}]{in\_\-eps, }
+\item[{char $\ast$}]{in\_\-out\_\-name, }
+\item[{int}]{in\_\-count, }
+\item[{double}]{in\_\-t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classAlgLin_aff1317578ef31f6f1fd621015d6e6c5f}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\_\-height} & Height calculation area \\
+\hline
+{\em in\_\-lenght} & Lenght calculation area \\
+\hline
+{\em in\_\-nx} & Count of Ox node \\
+\hline
+{\em in\_\-ny} & Count of Oy node \\
+\hline
+{\em in\_\-eps} & The accuracy of calculations \\
+\hline
+{\em in\_\-out\_\-name} & Output filename for save result \\
+\hline
+{\em count} & Count iteration by time \\
+\hline
+{\em in\_\-t} & Step by time \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classAlgLin_a0e6a96c3b072cb277bd7b1d4dd945472}{
+\index{AlgLin@{AlgLin}!find@{find}}
+\index{find@{find}!AlgLin@{AlgLin}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}double AlgLin::find (
+\begin{DoxyParamCaption}
+\item[{int}]{mode, }
+\item[{double $\ast$$\ast$}]{a, }
+\item[{double $\ast$$\ast$}]{b, }
+\item[{double $\ast$$\ast$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classAlgLin_a0e6a96c3b072cb277bd7b1d4dd945472}
+
+
+Function to find method coefficient for one equation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & number of equation \\
+\hline
+{\em a} & array of data for first equation \\
+\hline
+{\em b} & array of data for second equation \\
+\hline
+{\em c} & array of data for third equation \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classAlg_a979d6df06027c6353b682662d8c514fc}{Alg}.
+
+\hypertarget{classAlgLin_a8323f1f45960e8d39184a61730fffffb}{
+\index{AlgLin@{AlgLin}!find@{find}}
+\index{find@{find}!AlgLin@{AlgLin}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}double AlgLin::find (
+\begin{DoxyParamCaption}
+\item[{double $\ast$$\ast$}]{a, }
+\item[{double $\ast$$\ast$}]{b, }
+\item[{double $\ast$$\ast$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classAlgLin_a8323f1f45960e8d39184a61730fffffb}
+
+
+Function to find method coefficient. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & array of data for first equation \\
+\hline
+{\em b} & array of data for second equation \\
+\hline
+{\em c} & array of data for third equation \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classAlg_ada4ff3d2a0adb3b177d824e337158bfd}{Alg}.
+
+\hypertarget{classAlgLin_ac5e5cd276c5be663d2d36ab92bf6ad83}{
+\index{AlgLin@{AlgLin}!find\_\-all@{find\_\-all}}
+\index{find\_\-all@{find\_\-all}!AlgLin@{AlgLin}}
+\subsubsection[{find\_\-all}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$ AlgLin::find\_\-all (
+\begin{DoxyParamCaption}
+\item[{double $\ast$$\ast$}]{a, }
+\item[{double $\ast$$\ast$}]{b, }
+\item[{double $\ast$$\ast$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classAlgLin_ac5e5cd276c5be663d2d36ab92bf6ad83}
+not used 
+
+Implements \hyperlink{classAlg_aef9cdfe539aed53c23222715c551e11e}{Alg}.
+
+\hypertarget{classAlgLin_a7784f0707d7a081da5f85615f374df32}{
+\index{AlgLin@{AlgLin}!resolve\_\-r@{resolve\_\-r}}
+\index{resolve\_\-r@{resolve\_\-r}!AlgLin@{AlgLin}}
+\subsubsection[{resolve\_\-r}]{\setlength{\rightskip}{0pt plus 5cm}void AlgLin::resolve\_\-r (
+\begin{DoxyParamCaption}
+\item[{int}]{mode}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classAlgLin_a7784f0707d7a081da5f85615f374df32}
+Function for recalculation of reciduals for one equation 
+\begin{DoxyParams}{Parameters}
+{\em mode} & number of equation for recalculation \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classAlg_aa2436420b85976a48465408e9d86d425}{Alg}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/media/Documents/Documents/University/science/Numeric/Kurs/Kurs\_\-Linux/Kurs/src/alg\_\-lin.h\item 
+/media/Documents/Documents/University/science/Numeric/Kurs/Kurs\_\-Linux/Kurs/src/alg\_\-lin.cpp\end{DoxyCompactItemize}

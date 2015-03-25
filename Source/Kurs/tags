@@ -1,0 +1,254 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALG_H_INCLUDE	alg.h	2;"	d
+ALG_LIN_H_INCLUDED	alg_lin.h	2;"	d
+ALG_NONLIN_H_INCLUDED	alg_nonlin.h	2;"	d
+Alg	alg.cpp	/^Alg::Alg(double in_height,double in_lenght,int in_nx,int in_ny,double in_eps,char *in_out_name, int in_count, double in_t)$/;"	f	class:Alg	signature:(double in_height,double in_lenght,int in_nx,int in_ny,double in_eps,char *in_out_name, int in_count, double in_t)
+Alg	alg.h	/^	Alg(double in_height,double in_lenght,int in_nx,int in_ny,double in_eps,char *in_out_name,int count,double tau);$/;"	p	class:Alg	access:public	signature:(double in_height,double in_lenght,int in_nx,int in_ny,double in_eps,char *in_out_name,int count,double tau)
+Alg	alg.h	/^class Alg$/;"	c
+Alg::Alg	alg.cpp	/^Alg::Alg(double in_height,double in_lenght,int in_nx,int in_ny,double in_eps,char *in_out_name, int in_count, double in_t)$/;"	f	class:Alg	signature:(double in_height,double in_lenght,int in_nx,int in_ny,double in_eps,char *in_out_name, int in_count, double in_t)
+Alg::Alg	alg.h	/^	Alg(double in_height,double in_lenght,int in_nx,int in_ny,double in_eps,char *in_out_name,int count,double tau);$/;"	p	class:Alg	access:public	signature:(double in_height,double in_lenght,int in_nx,int in_ny,double in_eps,char *in_out_name,int count,double tau)
+Alg::B	alg.cpp	/^double Alg::B(int i,int j,int iter)$/;"	f	class:Alg	signature:(int i,int j,int iter)
+Alg::B	alg.h	/^	double B(int i,int j,int iter);$/;"	p	class:Alg	access:public	signature:(int i,int j,int iter)
+Alg::H	alg.cpp	/^double Alg::H(int i,int j)$/;"	f	class:Alg	signature:(int i,int j)
+Alg::H	alg.h	/^	double H(int i,int j);$/;"	p	class:Alg	access:public	signature:(int i,int j)
+Alg::count	alg.h	/^	int count;$/;"	m	class:Alg	access:protected
+Alg::diffX	alg.cpp	/^double Alg::diffX(double **a,int i,int j)$/;"	f	class:Alg	signature:(double **a,int i,int j)
+Alg::diffX	alg.h	/^    double diffX(double **a,int i,int j);$/;"	p	class:Alg	access:public	signature:(double **a,int i,int j)
+Alg::diffY	alg.cpp	/^double Alg::diffY(double **a,int i,int j)$/;"	f	class:Alg	signature:(double **a,int i,int j)
+Alg::diffY	alg.h	/^    double diffY(double **a,int i,int j);$/;"	p	class:Alg	access:public	signature:(double **a,int i,int j)
+Alg::eps	alg.h	/^	double eps;$/;"	m	class:Alg	access:protected
+Alg::find	alg.h	/^	virtual double find(double **a,double **b,double **c)=0;$/;"	p	class:Alg	access:public	signature:(double **a,double **b,double **c)
+Alg::find_coeff	alg.cpp	/^double Alg::find_coeff(char *name)$/;"	f	class:Alg	signature:(char *name)
+Alg::find_coeff	alg.h	/^	double find_coeff(char *name);$/;"	p	class:Alg	access:public	signature:(char *name)
+Alg::getCount	alg.cpp	/^int Alg::getCount()$/;"	f	class:Alg	signature:()
+Alg::getCount	alg.h	/^    int getCount();$/;"	p	class:Alg	access:public	signature:()
+Alg::getH	alg.cpp	/^void Alg::getH(char *file_name){$/;"	f	class:Alg	signature:(char *file_name)
+Alg::getH	alg.h	/^    void getH(char *file_name);$/;"	p	class:Alg	access:public	signature:(char *file_name)
+Alg::getIter	alg.cpp	/^int Alg::getIter()$/;"	f	class:Alg	signature:()
+Alg::getIter	alg.h	/^    int getIter();$/;"	p	class:Alg	access:public	signature:()
+Alg::getMod	alg.cpp	/^double Alg::getMod()$/;"	f	class:Alg	signature:()
+Alg::getMod	alg.h	/^    double getMod();$/;"	p	class:Alg	access:public	signature:()
+Alg::get_norm_r	alg.cpp	/^double Alg::get_norm_r()$/;"	f	class:Alg	signature:()
+Alg::get_norm_r	alg.h	/^	double get_norm_r();$/;"	p	class:Alg	access:public	signature:()
+Alg::get_u_v_pov	alg.h	/^	void get_u_v_pov(char *out_u,char *out_v,char *out_pov);$/;"	p	class:Alg	access:public	signature:(char *out_u,char *out_v,char *out_pov)
+Alg::height	alg.h	/^	double height,lenght;$/;"	m	class:Alg	access:protected
+Alg::hx	alg.h	/^	double hx,hy,t;$/;"	m	class:Alg	access:protected
+Alg::hy	alg.h	/^	double hx,hy,t;$/;"	m	class:Alg	access:protected
+Alg::iter	alg.h	/^	int iter;$/;"	m	class:Alg	access:protected
+Alg::lenght	alg.h	/^	double height,lenght;$/;"	m	class:Alg	access:protected
+Alg::mod	alg.h	/^    double mod;$/;"	m	class:Alg	access:protected
+Alg::nx	alg.h	/^	int nx,ny;$/;"	m	class:Alg	access:protected
+Alg::ny	alg.h	/^	int nx,ny;$/;"	m	class:Alg	access:protected
+Alg::out_name	alg.h	/^	char out_name[256];$/;"	m	class:Alg	access:protected
+Alg::pov	alg.h	/^	double **pov;$/;"	m	class:Alg	access:protected
+Alg::pov_temp1	alg.h	/^	double **pov_temp1;$/;"	m	class:Alg	access:protected
+Alg::pov_temp2	alg.h	/^	double **pov_temp2;$/;"	m	class:Alg	access:protected
+Alg::print	alg.cpp	/^void Alg::print(double **a)$/;"	f	class:Alg	signature:(double **a)
+Alg::print	alg.cpp	/^void Alg::print(double **a,char *name)$/;"	f	class:Alg	signature:(double **a,char *name)
+Alg::print	alg.h	/^	void print(double **a,char *name);$/;"	p	class:Alg	access:public	signature:(double **a,char *name)
+Alg::print	alg.h	/^    void print(double **a);$/;"	p	class:Alg	access:public	signature:(double **a)
+Alg::print_tec	alg.h	/^	void print_tec(double **a,char *out);$/;"	p	class:Alg	access:public	signature:(double **a,char *out)
+Alg::r1	alg.h	/^	double **r1;$/;"	m	class:Alg	access:protected
+Alg::r2	alg.h	/^	double **r2;$/;"	m	class:Alg	access:protected
+Alg::r3	alg.h	/^	double **r3;$/;"	m	class:Alg	access:protected
+Alg::resolve	alg.cpp	/^void Alg::resolve(double coeff,double **a,double **b,double **c)$/;"	f	class:Alg	signature:(double coeff,double **a,double **b,double **c)
+Alg::resolve	alg.h	/^	void resolve(double coeff,double **a,double **b,double **c);$/;"	p	class:Alg	access:public	signature:(double coeff,double **a,double **b,double **c)
+Alg::resolve_param	alg.cpp	/^void Alg::resolve_param(double coeff,char *name)$/;"	f	class:Alg	signature:(double coeff,char *name)
+Alg::resolve_param	alg.h	/^	void resolve_param(double coeff,char *name);$/;"	p	class:Alg	access:public	signature:(double coeff,char *name)
+Alg::resolve_r	alg.h	/^	virtual void resolve_r()=0;$/;"	p	class:Alg	access:public	signature:()
+Alg::return_pov	alg.cpp	/^double** Alg::return_pov()$/;"	f	class:Alg	signature:()
+Alg::return_pov	alg.h	/^	double** return_pov();$/;"	p	class:Alg	access:public	signature:()
+Alg::return_u	alg.cpp	/^double** Alg::return_u()$/;"	f	class:Alg	signature:()
+Alg::return_u	alg.h	/^	double** return_u();$/;"	p	class:Alg	access:public	signature:()
+Alg::return_v	alg.cpp	/^double** Alg::return_v()$/;"	f	class:Alg	signature:()
+Alg::return_v	alg.h	/^	double** return_v();$/;"	p	class:Alg	access:public	signature:()
+Alg::set_temp	alg.cpp	/^void Alg::set_temp(int number)$/;"	f	class:Alg	signature:(int number)
+Alg::set_temp	alg.h	/^	void set_temp(int number);$/;"	p	class:Alg	access:public	signature:(int number)
+Alg::set_u_v_pov	alg.h	/^	void set_u_v_pov();$/;"	p	class:Alg	access:public	signature:()
+Alg::set_u_v_pov	alg.h	/^	void set_u_v_pov(char *out_u,char *out_v);$/;"	p	class:Alg	access:public	signature:(char *out_u,char *out_v)
+Alg::set_u_v_pov	alg.h	/^	void set_u_v_pov(char *out_u,char *out_v,char *out_pov);$/;"	p	class:Alg	access:public	signature:(char *out_u,char *out_v,char *out_pov)
+Alg::solve	alg.cpp	/^void Alg::solve(int out_n)$/;"	f	class:Alg	signature:(int out_n)
+Alg::solve	alg.h	/^	void solve(int out_n);$/;"	p	class:Alg	access:public	signature:(int out_n)
+Alg::t	alg.h	/^	double hx,hy,t;$/;"	m	class:Alg	access:protected
+Alg::temp1	alg.h	/^	double **temp1;$/;"	m	class:Alg	access:protected
+Alg::temp2	alg.h	/^	double **temp2;$/;"	m	class:Alg	access:protected
+Alg::temp3	alg.h	/^	double **temp3;$/;"	m	class:Alg	access:protected
+Alg::u	alg.h	/^	double **u;$/;"	m	class:Alg	access:protected
+Alg::u_temp1	alg.h	/^	double **u_temp1;$/;"	m	class:Alg	access:protected
+Alg::u_temp2	alg.h	/^	double **u_temp2;$/;"	m	class:Alg	access:protected
+Alg::v	alg.h	/^	double **v;$/;"	m	class:Alg	access:protected
+Alg::v_temp1	alg.h	/^	double **v_temp1;$/;"	m	class:Alg	access:protected
+Alg::v_temp2	alg.h	/^	double **v_temp2;$/;"	m	class:Alg	access:protected
+Alg::~Alg	alg.h	/^	~Alg();$/;"	p	class:Alg	access:public	signature:()
+AlgLin	alg_lin.h	/^    AlgLin(double in_height,double in_lenght,int in_nx,int in_ny,double in_eps,char *in_out_name, int in_count, double in_t):Alg(in_height,in_lenght,in_nx,in_ny,in_eps,in_out_name,in_count,in_t){};$/;"	f	class:AlgLin	access:public	signature:(double in_height,double in_lenght,int in_nx,int in_ny,double in_eps,char *in_out_name, int in_count, double in_t)
+AlgLin	alg_lin.h	/^class AlgLin : public Alg{$/;"	c	inherits:Alg
+AlgLin::AlgLin	alg_lin.h	/^    AlgLin(double in_height,double in_lenght,int in_nx,int in_ny,double in_eps,char *in_out_name, int in_count, double in_t):Alg(in_height,in_lenght,in_nx,in_ny,in_eps,in_out_name,in_count,in_t){};$/;"	f	class:AlgLin	access:public	signature:(double in_height,double in_lenght,int in_nx,int in_ny,double in_eps,char *in_out_name, int in_count, double in_t)
+AlgLin::find	alg_lin.cpp	/^double AlgLin::find(double **a,double **b,double **c)$/;"	f	class:AlgLin	signature:(double **a,double **b,double **c)
+AlgLin::find	alg_lin.h	/^    double find(double **a,double **b,double **c);$/;"	p	class:AlgLin	access:public	signature:(double **a,double **b,double **c)
+AlgLin::resolve_r	alg_lin.cpp	/^void AlgLin::resolve_r()$/;"	f	class:AlgLin	signature:()
+AlgLin::resolve_r	alg_lin.h	/^   void resolve_r();$/;"	p	class:AlgLin	access:public	signature:()
+AlgNonlin	alg_nonlin.h	/^    AlgNonlin(double in_height,double in_lenght,int in_nx,int in_ny,double in_eps,char *in_out_name, int in_count, double in_t):Alg(in_height,in_lenght,in_nx,in_ny,in_eps,in_out_name,in_count,in_t){};$/;"	f	class:AlgNonlin	access:public	signature:(double in_height,double in_lenght,int in_nx,int in_ny,double in_eps,char *in_out_name, int in_count, double in_t)
+AlgNonlin	alg_nonlin.h	/^class AlgNonlin : public Alg{$/;"	c	inherits:Alg
+AlgNonlin::AlgNonlin	alg_nonlin.h	/^    AlgNonlin(double in_height,double in_lenght,int in_nx,int in_ny,double in_eps,char *in_out_name, int in_count, double in_t):Alg(in_height,in_lenght,in_nx,in_ny,in_eps,in_out_name,in_count,in_t){};$/;"	f	class:AlgNonlin	access:public	signature:(double in_height,double in_lenght,int in_nx,int in_ny,double in_eps,char *in_out_name, int in_count, double in_t)
+AlgNonlin::find	alg_nonlin.cpp	/^double AlgNonlin::find(double **a,double **b,double **c)$/;"	f	class:AlgNonlin	signature:(double **a,double **b,double **c)
+AlgNonlin::find	alg_nonlin.h	/^    double find(double **a,double **b,double **c);$/;"	p	class:AlgNonlin	access:public	signature:(double **a,double **b,double **c)
+AlgNonlin::resolve_r	alg_nonlin.cpp	/^void AlgNonlin::resolve_r()$/;"	f	class:AlgNonlin	signature:()
+AlgNonlin::resolve_r	alg_nonlin.h	/^   void resolve_r();$/;"	p	class:AlgNonlin	access:public	signature:()
+ArchiveOutputSwitch	Kurs.mk	/^ArchiveOutputSwitch    := $/;"	m
+ArchiveTool	Kurs.mk	/^ArchiveTool            :=ar rcus$/;"	m
+B	alg.cpp	/^double Alg::B(int i,int j,int iter)$/;"	f	class:Alg	signature:(int i,int j,int iter)
+B	alg.h	/^	double B(int i,int j,int iter);$/;"	p	class:Alg	access:public	signature:(int i,int j,int iter)
+COMPARER_H	comparer.h	2;"	d
+C_CmpOptions	Kurs.mk	/^C_CmpOptions           :=  $(Preprocessors)$/;"	m
+C_CompilerName	Kurs.mk	/^C_CompilerName         :=gcc$/;"	m
+CmpOptions	Kurs.mk	/^CmpOptions             := -O3 -fexpensive-optimizations -march=athlon -ftracer -mfpmath=sse -ftree-loop-optimize -fmath-errno -ftrapping-math  $(Preprocessors)$/;"	m
+CodeLiteDir	Kurs.mk	/^CodeLiteDir:=C:\\Program Files\\CodeLite$/;"	m
+CodeLitePath	Kurs.mk	/^CodeLitePath           :="C:\\Program Files\\CodeLite"$/;"	m
+Comparer	comparer.cpp	/^Comparer::Comparer(int _nx,int _ny, double _hx,double _hy,int _time):nx(_nx),ny(_ny),hx(_hx),hy(_hy),time(_time)$/;"	f	class:Comparer	signature:(int _nx,int _ny, double _hx,double _hy,int _time)
+Comparer	comparer.h	/^    Comparer(int nx,int ny,double hx,double hy,int time);$/;"	p	class:Comparer	access:public	signature:(int nx,int ny,double hx,double hy,int time)
+Comparer	comparer.h	/^class Comparer{$/;"	c
+Comparer::Comparer	comparer.cpp	/^Comparer::Comparer(int _nx,int _ny, double _hx,double _hy,int _time):nx(_nx),ny(_ny),hx(_hx),hy(_hy),time(_time)$/;"	f	class:Comparer	signature:(int _nx,int _ny, double _hx,double _hy,int _time)
+Comparer::Comparer	comparer.h	/^    Comparer(int nx,int ny,double hx,double hy,int time);$/;"	p	class:Comparer	access:public	signature:(int nx,int ny,double hx,double hy,int time)
+Comparer::delta	comparer.cpp	/^void Comparer::delta(char* file1,char* file2,char* resultDelta){$/;"	f	class:Comparer	signature:(char* file1,char* file2,char* resultDelta)
+Comparer::delta	comparer.h	/^    void delta(char* file1,char* file2, char* result);$/;"	p	class:Comparer	access:public	signature:(char* file1,char* file2, char* result)
+Comparer::hx	comparer.h	/^    double hx,hy;$/;"	m	class:Comparer	access:private
+Comparer::hy	comparer.h	/^    double hx,hy;$/;"	m	class:Comparer	access:private
+Comparer::nx	comparer.h	/^    int nx,ny,time;$/;"	m	class:Comparer	access:private
+Comparer::ny	comparer.h	/^    int nx,ny,time;$/;"	m	class:Comparer	access:private
+Comparer::time	comparer.h	/^    int nx,ny,time;$/;"	m	class:Comparer	access:private
+Comparer::~Comparer	comparer.h	/^    ~Comparer();$/;"	p	class:Comparer	access:public	signature:()
+CompilerName	Kurs.mk	/^CompilerName           :=g++$/;"	m
+ConfigurationName	Kurs.mk	/^ConfigurationName      :=Release$/;"	m
+CurrentFileFullPath	Kurs.mk	/^CurrentFileFullPath    :=$/;"	m
+CurrentFileName	Kurs.mk	/^CurrentFileName        :=$/;"	m
+CurrentFilePath	Kurs.mk	/^CurrentFilePath        :=$/;"	m
+Date	Kurs.mk	/^Date                   :=26.12.2011$/;"	m
+DebugSwitch	Kurs.mk	/^DebugSwitch            :=-gstab$/;"	m
+DependSuffix	Kurs.mk	/^DependSuffix           :=.o.d$/;"	m
+H	alg.cpp	/^double Alg::H(int i,int j)$/;"	f	class:Alg	signature:(int i,int j)
+H	alg.h	/^	double H(int i,int j);$/;"	p	class:Alg	access:public	signature:(int i,int j)
+IncludePCH	Kurs.mk	/^IncludePCH             := $/;"	m
+IncludePath	Kurs.mk	/^IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). $/;"	m
+IncludeSwitch	Kurs.mk	/^IncludeSwitch          :=-I$/;"	m
+IntermediateDirectory	Kurs.mk	/^IntermediateDirectory  :=.\/Release$/;"	m
+LibPath	Kurs.mk	/^LibPath                := $(LibraryPathSwitch). $/;"	m
+LibraryPathSwitch	Kurs.mk	/^LibraryPathSwitch      :=-L$/;"	m
+LibrarySwitch	Kurs.mk	/^LibrarySwitch          :=-l$/;"	m
+Libs	Kurs.mk	/^Libs                   := $/;"	m
+LinkOptions	Kurs.mk	/^LinkOptions            :=  -s -O2$/;"	m
+LinkerName	Kurs.mk	/^LinkerName             :=g++$/;"	m
+MakeDirCommand	Kurs.mk	/^MakeDirCommand         :=makedir$/;"	m
+ObjectSuffix	Kurs.mk	/^ObjectSuffix           :=.o$/;"	m
+ObjectSwitch	Kurs.mk	/^ObjectSwitch           :=-o $/;"	m
+Objects	Kurs.mk	/^Objects=$(IntermediateDirectory)\/main$(ObjectSuffix) $(IntermediateDirectory)\/alg$(ObjectSuffix) $/;"	m
+ObjectsFileList	Kurs.mk	/^ObjectsFileList        :="E:\\Documents\\University\\science\\Numeric\\Kurs\\Kurs_Linux\\Kurs\\Kurs.txt"$/;"	m
+OutDir	Kurs.mk	/^OutDir                 := $(IntermediateDirectory)$/;"	m
+OutputFile	Kurs.mk	/^OutputFile             :=$(IntermediateDirectory)\/$(ProjectName).exe$/;"	m
+OutputSwitch	Kurs.mk	/^OutputSwitch           :=-o $/;"	m
+PCHCompileFlags	Kurs.mk	/^PCHCompileFlags        :=$/;"	m
+PreprocessOnlySwitch	Kurs.mk	/^PreprocessOnlySwitch   :=-E $/;"	m
+PreprocessSuffix	Kurs.mk	/^PreprocessSuffix       :=.o.i$/;"	m
+PreprocessorSwitch	Kurs.mk	/^PreprocessorSwitch     :=-D$/;"	m
+Preprocessors	Kurs.mk	/^Preprocessors          :=$/;"	m
+ProjectName	Kurs.mk	/^ProjectName            :=Kurs$/;"	m
+ProjectPath	Kurs.mk	/^ProjectPath            := "E:\\Documents\\University\\science\\Numeric\\Kurs\\Kurs_Linux\\Kurs"$/;"	m
+RcIncludePath	Kurs.mk	/^RcIncludePath          := $/;"	m
+SharedObjectLinkerName	Kurs.mk	/^SharedObjectLinkerName :=g++ -shared -fPIC$/;"	m
+SourceSwitch	Kurs.mk	/^SourceSwitch           :=-c $/;"	m
+User	Kurs.mk	/^User                   :=erthalion$/;"	m
+WorkspacePath	Kurs.mk	/^WorkspacePath          := "E:\\Documents\\University\\science\\Numeric\\Kurs\\Kurs_Linux\\Kurs"$/;"	m
+count	alg.h	/^	int count;$/;"	m	class:Alg	access:protected
+delta	comparer.cpp	/^void Comparer::delta(char* file1,char* file2,char* resultDelta){$/;"	f	class:Comparer	signature:(char* file1,char* file2,char* resultDelta)
+delta	comparer.h	/^    void delta(char* file1,char* file2, char* result);$/;"	p	class:Comparer	access:public	signature:(char* file1,char* file2, char* result)
+diffX	alg.cpp	/^double Alg::diffX(double **a,int i,int j)$/;"	f	class:Alg	signature:(double **a,int i,int j)
+diffX	alg.h	/^    double diffX(double **a,int i,int j);$/;"	p	class:Alg	access:public	signature:(double **a,int i,int j)
+diffY	alg.cpp	/^double Alg::diffY(double **a,int i,int j)$/;"	f	class:Alg	signature:(double **a,int i,int j)
+diffY	alg.h	/^    double diffY(double **a,int i,int j);$/;"	p	class:Alg	access:public	signature:(double **a,int i,int j)
+eps	alg.h	/^	double eps;$/;"	m	class:Alg	access:protected
+find	alg.h	/^	virtual double find(double **a,double **b,double **c)=0;$/;"	p	class:Alg	access:public	signature:(double **a,double **b,double **c)
+find	alg_lin.cpp	/^double AlgLin::find(double **a,double **b,double **c)$/;"	f	class:AlgLin	signature:(double **a,double **b,double **c)
+find	alg_lin.h	/^    double find(double **a,double **b,double **c);$/;"	p	class:AlgLin	access:public	signature:(double **a,double **b,double **c)
+find	alg_nonlin.cpp	/^double AlgNonlin::find(double **a,double **b,double **c)$/;"	f	class:AlgNonlin	signature:(double **a,double **b,double **c)
+find	alg_nonlin.h	/^    double find(double **a,double **b,double **c);$/;"	p	class:AlgNonlin	access:public	signature:(double **a,double **b,double **c)
+find_coeff	alg.cpp	/^double Alg::find_coeff(char *name)$/;"	f	class:Alg	signature:(char *name)
+find_coeff	alg.h	/^	double find_coeff(char *name);$/;"	p	class:Alg	access:public	signature:(char *name)
+g	alg.h	4;"	d
+g	alg_lin.h	4;"	d
+g	alg_nonlin.h	4;"	d
+getCount	alg.cpp	/^int Alg::getCount()$/;"	f	class:Alg	signature:()
+getCount	alg.h	/^    int getCount();$/;"	p	class:Alg	access:public	signature:()
+getH	alg.cpp	/^void Alg::getH(char *file_name){$/;"	f	class:Alg	signature:(char *file_name)
+getH	alg.h	/^    void getH(char *file_name);$/;"	p	class:Alg	access:public	signature:(char *file_name)
+getIter	alg.cpp	/^int Alg::getIter()$/;"	f	class:Alg	signature:()
+getIter	alg.h	/^    int getIter();$/;"	p	class:Alg	access:public	signature:()
+getMod	alg.cpp	/^double Alg::getMod()$/;"	f	class:Alg	signature:()
+getMod	alg.h	/^    double getMod();$/;"	p	class:Alg	access:public	signature:()
+get_norm_r	alg.cpp	/^double Alg::get_norm_r()$/;"	f	class:Alg	signature:()
+get_norm_r	alg.h	/^	double get_norm_r();$/;"	p	class:Alg	access:public	signature:()
+get_u_v_pov	alg.h	/^	void get_u_v_pov(char *out_u,char *out_v,char *out_pov);$/;"	p	class:Alg	access:public	signature:(char *out_u,char *out_v,char *out_pov)
+height	alg.h	/^	double height,lenght;$/;"	m	class:Alg	access:protected
+hx	alg.h	/^	double hx,hy,t;$/;"	m	class:Alg	access:protected
+hx	comparer.h	/^    double hx,hy;$/;"	m	class:Comparer	access:private
+hy	alg.h	/^	double hx,hy,t;$/;"	m	class:Alg	access:protected
+hy	comparer.h	/^    double hx,hy;$/;"	m	class:Comparer	access:private
+iter	alg.h	/^	int iter;$/;"	m	class:Alg	access:protected
+lenght	alg.h	/^	double height,lenght;$/;"	m	class:Alg	access:protected
+main	main.cpp	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+mod	alg.h	/^    double mod;$/;"	m	class:Alg	access:protected
+nx	alg.h	/^	int nx,ny;$/;"	m	class:Alg	access:protected
+nx	comparer.h	/^    int nx,ny,time;$/;"	m	class:Comparer	access:private
+ny	alg.h	/^	int nx,ny;$/;"	m	class:Alg	access:protected
+ny	comparer.h	/^    int nx,ny,time;$/;"	m	class:Comparer	access:private
+out_name	alg.h	/^	char out_name[256];$/;"	m	class:Alg	access:protected
+pov	alg.h	/^	double **pov;$/;"	m	class:Alg	access:protected
+pov_temp1	alg.h	/^	double **pov_temp1;$/;"	m	class:Alg	access:protected
+pov_temp2	alg.h	/^	double **pov_temp2;$/;"	m	class:Alg	access:protected
+print	alg.cpp	/^void Alg::print(double **a)$/;"	f	class:Alg	signature:(double **a)
+print	alg.cpp	/^void Alg::print(double **a,char *name)$/;"	f	class:Alg	signature:(double **a,char *name)
+print	alg.h	/^	void print(double **a,char *name);$/;"	p	class:Alg	access:public	signature:(double **a,char *name)
+print	alg.h	/^    void print(double **a);$/;"	p	class:Alg	access:public	signature:(double **a)
+printState	alg.cpp	/^void *printState(void *alg)$/;"	f	signature:(void *alg)
+print_tec	alg.h	/^	void print_tec(double **a,char *out);$/;"	p	class:Alg	access:public	signature:(double **a,char *out)
+r1	alg.h	/^	double **r1;$/;"	m	class:Alg	access:protected
+r2	alg.h	/^	double **r2;$/;"	m	class:Alg	access:protected
+r3	alg.h	/^	double **r3;$/;"	m	class:Alg	access:protected
+resolve	alg.cpp	/^void Alg::resolve(double coeff,double **a,double **b,double **c)$/;"	f	class:Alg	signature:(double coeff,double **a,double **b,double **c)
+resolve	alg.h	/^	void resolve(double coeff,double **a,double **b,double **c);$/;"	p	class:Alg	access:public	signature:(double coeff,double **a,double **b,double **c)
+resolve_param	alg.cpp	/^void Alg::resolve_param(double coeff,char *name)$/;"	f	class:Alg	signature:(double coeff,char *name)
+resolve_param	alg.h	/^	void resolve_param(double coeff,char *name);$/;"	p	class:Alg	access:public	signature:(double coeff,char *name)
+resolve_r	alg.h	/^	virtual void resolve_r()=0;$/;"	p	class:Alg	access:public	signature:()
+resolve_r	alg_lin.cpp	/^void AlgLin::resolve_r()$/;"	f	class:AlgLin	signature:()
+resolve_r	alg_lin.h	/^   void resolve_r();$/;"	p	class:AlgLin	access:public	signature:()
+resolve_r	alg_nonlin.cpp	/^void AlgNonlin::resolve_r()$/;"	f	class:AlgNonlin	signature:()
+resolve_r	alg_nonlin.h	/^   void resolve_r();$/;"	p	class:AlgNonlin	access:public	signature:()
+return_pov	alg.cpp	/^double** Alg::return_pov()$/;"	f	class:Alg	signature:()
+return_pov	alg.h	/^	double** return_pov();$/;"	p	class:Alg	access:public	signature:()
+return_u	alg.cpp	/^double** Alg::return_u()$/;"	f	class:Alg	signature:()
+return_u	alg.h	/^	double** return_u();$/;"	p	class:Alg	access:public	signature:()
+return_v	alg.cpp	/^double** Alg::return_v()$/;"	f	class:Alg	signature:()
+return_v	alg.h	/^	double** return_v();$/;"	p	class:Alg	access:public	signature:()
+set_temp	alg.cpp	/^void Alg::set_temp(int number)$/;"	f	class:Alg	signature:(int number)
+set_temp	alg.h	/^	void set_temp(int number);$/;"	p	class:Alg	access:public	signature:(int number)
+set_u_v_pov	alg.h	/^	void set_u_v_pov();$/;"	p	class:Alg	access:public	signature:()
+set_u_v_pov	alg.h	/^	void set_u_v_pov(char *out_u,char *out_v);$/;"	p	class:Alg	access:public	signature:(char *out_u,char *out_v)
+set_u_v_pov	alg.h	/^	void set_u_v_pov(char *out_u,char *out_v,char *out_pov);$/;"	p	class:Alg	access:public	signature:(char *out_u,char *out_v,char *out_pov)
+solve	alg.cpp	/^void Alg::solve(int out_n)$/;"	f	class:Alg	signature:(int out_n)
+solve	alg.h	/^	void solve(int out_n);$/;"	p	class:Alg	access:public	signature:(int out_n)
+t	alg.h	/^	double hx,hy,t;$/;"	m	class:Alg	access:protected
+temp1	alg.h	/^	double **temp1;$/;"	m	class:Alg	access:protected
+temp2	alg.h	/^	double **temp2;$/;"	m	class:Alg	access:protected
+temp3	alg.h	/^	double **temp3;$/;"	m	class:Alg	access:protected
+time	comparer.h	/^    int nx,ny,time;$/;"	m	class:Comparer	access:private
+u	alg.h	/^	double **u;$/;"	m	class:Alg	access:protected
+u_temp1	alg.h	/^	double **u_temp1;$/;"	m	class:Alg	access:protected
+u_temp2	alg.h	/^	double **u_temp2;$/;"	m	class:Alg	access:protected
+v	alg.h	/^	double **v;$/;"	m	class:Alg	access:protected
+v_temp1	alg.h	/^	double **v_temp1;$/;"	m	class:Alg	access:protected
+v_temp2	alg.h	/^	double **v_temp2;$/;"	m	class:Alg	access:protected
+~Alg	alg.h	/^	~Alg();$/;"	p	class:Alg	access:public	signature:()
+~Comparer	comparer.h	/^    ~Comparer();$/;"	p	class:Comparer	access:public	signature:()
